@@ -1,6 +1,10 @@
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.JButton;
+import java.awt.BorderLayout;
+import javax.swing.JRadioButton;
+import javax.swing.JSplitPane;
 
 public class Login {
 
@@ -36,6 +40,14 @@ public class Login {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JRadioButton rdbtnNewRadioButton = new JRadioButton("New radio button");
+		rdbtnNewRadioButton.setBounds(6, 7, 32, 139);
+		frame.getContentPane().add(rdbtnNewRadioButton);
+		
+		JButton btnNewButton = new JButton("New button");
+		btnNewButton.setBounds(136, 211, 89, 23);
+		frame.getContentPane().add(btnNewButton);
 	}
-
 }
